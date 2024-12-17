@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Кондитерская мечта - эксклюзивные десерты и торты">
+    <meta name="keywords" content="кондитерская, десерты, торты, рецепты, сладости">
+    <meta name="author" content="Чиловый паренек">
+    <title>Кондитерская мечта</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="logo">
+            <h1>Тренер по Dota 2</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#gallery">Герои для новичков</a></li>
+                <li><a href="#characters">О персонажах</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Слайдер -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="./images/IMG_1734.PNG" alt="Торт 1">
+            </div>
+            <div class="slide">
+                <img src="./images/slider_image.png" alt="Торт 2">
+            </div>
+            <div class="slide">
+                <img src="./images/IMG_1736.PNG" alt="Торт 3">
+            </div>
+        </div>
+        <button class="prev-button">&#10094;</button>
+        <button class="next-button">&#10095;</button>
+    </section>
+
+    <!-- О кондитере -->
+    <section id="about">
+    <h2>Обо мне</h2>
+    <div class="about-content">
+        <img src="images/IMG_4572.jpg" alt="Моя фотография" class="about-photo">
+        <div class="about-text">
+            <p>Здравствуйте! Меня зовут Никита. Я увлекаюсь онлайн игрой <span class="no-wrap">Dota 2</span> и всегда стремлюсь выиграть каждый матч, при этом получая удовольствие от игры. Мое внутриигровое звание - Титан</p>
+            <p>Я уверен, что я смогу научить любого как азам, так и тонкостям этой игры. Обучение стоит всего 5000р, но, как говорится, эмоции от игры не стоят никаких денег!</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Галерея -->
+    <section id="gallery">
+        <h2>Герои для новичков</h2>
+        <div class="gallery-grid">
+            <div>
+                <img src="images/witch.png" alt="Торт 1">
+                <p>Witch Doctor</p>
+            </div>
+            <!-- <img src="images/witch.png" alt="Торт 1"> -->
+            <div>
+                <img src="images/2.png" alt="Торт 2">
+                <p>Phantom Assassin</p>
+            </div>
+            <div>
+                <img src="images/3.png" alt="Торт 3">
+                <p>Axe</p>
+            </div>
+            <div>
+                <img src="images/4.png" alt="Торт 3">
+                <p>Sniper</p>
+            </div>
+            <div>
+                <img src="images/5.png" alt="Торт 3">
+                <p>Shadow Shaman</p>
+            </div>
+            <div>
+                <img src="images/6.png" alt="Торт 3">
+                <p>Lion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Видео -->
+    <section id="video">
+        <h2>Видеообучение</h2>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/cPCpZnNnjWw" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="characters" class="heroes-section">
+        <h2>О персонажах</h2>
+        <div class="heroes">
+            <article class="heroes__item">
+                <h3>Witch Doctor</h3>
+                <button class="heroes__button">Подробнее</button>
+                <div class="heroes__description visually-hidden">
+                    <img src="./images/abilities_witch.png" alt="способности"/>
+                    <ol>
+                        <li>
+                            <h4>Paralyzing Cask</h4>
+                            <p>Бросает бочонок с парализующим порошком, который отскакивает от противников, оглушая их и нанося им урон. Крипы получают 150% от урона.</p>
+                        </li>
+                        <li>
+                            <h4>Voodoo Restoration</h4>
+                            <p>Герой направляет свои чары на лечение ближайших союзников, теряя ману каждую секунду действия этой способности.</p>
+                        </li>
+                        <li>
+                            <h4>Maledict</h4>
+                            <p>Накладывает сглаз на всех вражеских героев в небольшой области, после чего они получают урон каждую секунду. Помимо этого, каждые 4 секунды им наносится периодический урон, зависящий от количества здоровья, потерянного с наложения сглаза.</p>
+                        </li>
+                        <li>
+                            <h4>Death Ward</h4>
+                            <p>ПРЕРЫВАЕМАЯ — призывает смертоносный тотем, атакующий вражеских героев. Действует до 8 сек. Тотем имеет бонус к точности в 50%.</p>
+                        </li>
+                    </ol>
+                    <h3>О герое</h3>
+                    <p>Witch Doctor идеально дополняет любую команду. Мало кто сравнится с ним по универсальности: он может постепенно излечивать товарищей, оглушать и насмерть проклинать врагов, а также уничтожать их своим мощным ультом.</p>
+                </div>
+            </article>
+            <article class="heroes__item">
+                <h3>Phantom Assassin</h3>
+                <button class="heroes__button">Подробнее</button>
+                <div class="heroes__description visually-hidden">
+                    <img src="./images/abilities_phantom.png" alt="способности"/>
+                    <ol>
+                        <li>
+                            <h4>Stifling Dagger</h4>
+                            <p>Бросает кинжал, который замедляет скорость передвижения врага, наносит ему физический урон в размере 65 + 30% от атаки героя, а также накладывает эффекты предметов и способностей.</p>
+                        </li>
+                        <li>
+                            <h4>Phantom Strike</h4>
+                            <p>Герой телепортируется к выбранному существу и, если это противник, получает дополнительную скорость атаки</p>
+                        </li>
+                        <li>
+                            <h4>Blur</h4>
+                            <p>Герой размывает свои очертания, сбивая с цели направленные в него снаряды, становясь невидимым и передвигаясь быстрее, пока не совершит атаку или не приблизится к вражескому герою, башне или аванпосту.</p>
+                        </li>
+                        <li>
+                            <h4>Coup de Grace</h4>
+                            <p>Герой оттачивает свои боевые навыки, с каждой атакой имея шанс войти в состояние смертельного фокуса. В нём следующая атака гарантированно нанесёт критический урон и снимет фокус. Способность Stifling Dagger даёт фокус с повышенной вероятностью.</p>
+                        </li>
+                    </ol>
+                    <h3>О герое</h3>
+                    <p>Phantom Assassin идёт в наступление, едва завидев свою жертву. Мгновенно сблизившись с ней, Мортред легко уклоняется от атак и обрушивает на врага удар за ударом, любой из которых может оказаться роковым.</p>
+                </div>
+            </article>
+            <article class="heroes__item">
+                <h3>Axe</h3>
+                <button class="heroes__button">Подробнее</button>
+                <div class="heroes__description visually-hidden">
+                    <img src="./images/abilities_phantom.png" alt="способности"/>
+                    <ol>
+                        <li>
+                            <h4>Berserker's Call</h4>
+                            <p>Герой бросает вызов ближайшим врагам, заставляя их атаковать его, а также получает бонус к броне на время действия способности.</p>
+                        </li>
+                        <li>
+                            <h4>Battle Hunger</h4>
+                            <p>Приводит врага в бешенство, нанося ему урон, пока он кого-нибудь не убьёт или действие способности не закончится. Урон от способности увеличивается в зависимости от брони владельца способности. Скорость передвижения жертвы уменьшается, когда она не смотрит в сторону владельца способности.</p>
+                        </li>
+                        <li>
+                            <h4>Counter Helix</h4>
+                            <p>После определённого числа полученных атак герой прокручивает вокруг себя топор, нанося чистый урон всем врагам неподалёку.</p>
+                        </li>
+                        <li>
+                            <h4>Culling Blade</h4>
+                            <p>Герой находит слабую точку врага и наносит ему чистый урон. Если убить этой способностью вражеского героя, её перезарядка сбрасывается, а все союзники поблизости временно получат дополнительную скорость передвижения и броню.</p>
+                        </li>
+                    </ol>
+                    <h3>О герое</h3>
+                    <p>Axe рубит одного врага за другим, неизменно ступая впереди своей команды. Он вынуждает противников вступить в бой, а затем отвечает на их удары смертоносными взмахами топора. Нещадно круша ослабленных врагов, он всегда несётся вперёд.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!-- Подвал -->
+    <footer id="contact">
+        <p>Свяжитесь со мной:</p>
+        <ul>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">VK</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
