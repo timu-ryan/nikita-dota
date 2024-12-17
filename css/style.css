@@ -67,6 +67,12 @@ header nav ul li a:hover {
     border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+    .slider {
+        width: 90%;
+    }
+}
+
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -216,6 +222,7 @@ section {
 }
 
 /* Видео */
+
 #video h2 {
     font-family: 'Playfair Display', serif; 
     font-size: 2.5rem;
@@ -227,6 +234,21 @@ section {
 
 #video iframe {
     border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .video {
+        max-width: 90%;
+    }
+
+    .video iframe {
+        max-width: 100%;
+    }
+    #video h2 {
+        font-size: 25px;
+    }
+
 }
 
 /* Секция рецептов */
