@@ -201,6 +201,10 @@ section {
     gap: 10px;
 }
 
+.gallery-grid div a {
+    cursor: pointer;
+}
+
 .gallery-grid img {
     width: 100%;
     height: auto;

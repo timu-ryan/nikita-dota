@@ -64,15 +64,24 @@
         <h2>Герои для новичков</h2>
         <div class="gallery-grid">
             <div>
-                <img src="images/witch.png" alt="ведьмак">
+                <a 
+                    href="#characters"
+                    onclick="(() => {slidesDescriptions[0].classList.remove('visually-hidden')})()"
+                ><img src="images/witch.png" alt="ведьмак"></a>
                 <p>Witch Doctor</p>
             </div>
             <div>
-                <img src="images/2.png" alt="ассасин">
+                <a 
+                    href="#characters"
+                    onclick="(() => {slidesDescriptions[1].classList.remove('visually-hidden')})()"
+                ><img src="images/2.png" alt="ассасин"></a>
                 <p>Phantom Assassin</p>
             </div>
             <div>
-                <img src="images/3.png" alt="акс атакс">
+                <a 
+                    href="#characters"
+                    onclick="(() => {slidesDescriptions[2].classList.remove('visually-hidden')})()"
+                ><img src="images/3.png" alt="акс атакс"></a>
                 <p>Axe</p>
             </div>
             <div>
@@ -198,7 +207,7 @@
             <label for="tel">Номер телефона:</label>
             <input type="tel" name="tel" class="form__input"/>
         </div>
-        <button class="form__button">send!</button>
+        <button class="form__button">Отправить!</button>
     </form>
 
     <!-- Подвал -->
