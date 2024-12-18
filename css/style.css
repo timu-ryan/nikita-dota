@@ -12,6 +12,7 @@ body {
     box-sizing: border-box;
     background: rgb(51,51,51);
     background: linear-gradient(180deg, rgba(51,51,51,1) 0%, rgba(58,14,96,1) 100%);
+    background-attachment: fixed;
 }
 
 .no-wrap {
