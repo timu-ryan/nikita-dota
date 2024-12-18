@@ -357,6 +357,12 @@ footer ul li a:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 /* Скрываем все панели рецептов по умолчанию */
