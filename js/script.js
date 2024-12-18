@@ -72,7 +72,8 @@ function toggleRecipe(recipeId) {
 
 const tg = {
     token: "8002283833:AAFCiaFLW-713eQHldt3o3ihaL1gWrQTGZY", // Your bot's token that got from @BotFather
-    chat_id: "805792436" // The user's(that you want to send a message) telegram chat id
+    chat_id: "805792436", // The user's(that you want to send a message) telegram chat id
+    chat_id_2: '458563677',
 }
 
 /**
@@ -80,8 +81,8 @@ const tg = {
  * @param {String} the text to send
  *
 */
-function sendMessage(text) {
-    const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${tg.chat_id}&text=${text}`; // The url to request
+function sendMessage(text, id) {
+    const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${id}&text=${text}`; // The url to request
     const xht = new XMLHttpRequest();
     xht.open("GET", url);
     xht.send();
@@ -92,9 +93,10 @@ const formButton = document.querySelector('.form__button')
 
 formButton.addEventListener('click', (e) => {
     e.preventDefault();
-    const message = `имя: ${formInputs[0].value} \nномер телефона: ${formInputs[1].value}`
+    const message = `имя: ${formInputs[0].value} %0Aномер телефона: ${formInputs[1].value}`
 
-    sendMessage(message);
+    sendMessage(message, tg.chat_id);
+    sendMessage(message, tg.chat_id_2);
     formInputs[0].value = ""
     formInputs[1].value = ""
 })
